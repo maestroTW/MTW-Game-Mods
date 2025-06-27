@@ -1,0 +1,6 @@
+{
+	"name":"IndustrialBaby",
+	"author":"lucky death",
+	"description":"Industrial Baby Character",
+	"category":"Character"
+}
