@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MoveOrDie Mods</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      font-size: 2.5rem;
+      color: #f8f8f8;
+    }
+
+    .mods-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+    }
+
+    .mod-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mod-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .mod-card img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .mod-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .mod-title {
+      margin-top: 15px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4cc9f0;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .mod-description {
+      margin-top: 10px;
+      color: #e2e2e2;
+      font-size: 0.9rem;
+      min-height: 40px;
+    }
+
+    .icon-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: white;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .steam-icon {
+      background: linear-gradient(135deg, #1a9fff, #0066cc);
+    }
+
+    .github-icon {
+      background: linear-gradient(135deg, #333, #000);
+    }
+
+    .icon-link:hover {
+      transform: translateY(-3px) scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+<h1>
+  <a href="http://store.steampowered.com/app/323850/Move_or_Die/"
+     style="color: #4cc9f0; text-decoration: none; transition: all 0.3s ease;"
+     onmouseover="this.style.textShadow='0 0 10px #4cc9f0'"
+     onmouseout="this.style.textShadow='none'">
+    Move or Die
+  </a>
+  Mods Collection
+</h1>
+
+<div class="mods-container">
+  <div class="mod-card">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3508576521">
+      <img src="LuckyPatcher/steamthumbnail.png" alt="LuckyPatcher Mod">
+    </a>
+    <div class="mod-title">LuckyPatcher</div>
+    <div class="mod-description">Lucky Patcher Character</div>
+    <div class="icon-links">
+      <a href="https://github.com/maestroTW/MoveOrDie-Mods/tree/main/LuckyPatcher" class="icon-link github-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3508576521" class="icon-link steam-icon">
+        <i class="fab fa-steam"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="mod-card">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3510040093">
+      <img src="IndustrialBaby/steamthumbnail.png" alt="IndustrialBaby Mod">
+    </a>
+    <div class="mod-title">IndustrialBaby</div>
+    <div class="mod-description">Industrial Baby Character</div>
+    <div class="icon-links">
+      <a href="https://github.com/maestroTW/MoveOrDie-Mods/tree/main/IndustrialBaby" class="icon-link github-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3510040093" class="icon-link steam-icon">
+        <i class="fab fa-steam"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="mod-card">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3510243223">
+      <img src="DKEmotes/steamthumbnail.png" alt="DK Emotes Mod">
+    </a>
+    <div class="mod-title">DK Emotes</div>
+    <div class="mod-description">UI mod 'DK durak online' Emotes</div>
+    <div class="icon-links">
+      <a href="https://github.com/maestroTW/MoveOrDie-Mods/tree/main/DKEmotes" class="icon-link github-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3510243223" class="icon-link steam-icon">
+        <i class="fab fa-steam"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2025 maestroTW |
+  <a href="https://discord.gg/F8wNasEwNQ" style="color: #7289DA; text-decoration: none;">
+    <i class="fab fa-discord" style="margin-left: 5px;"></i> Discord
+  </a>
+</footer>
+</body>
+</html>
