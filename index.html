@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MoveOrDie Mods</title>
+  <title>MTW Mods</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
@@ -19,10 +19,45 @@
 
     h1 {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       text-shadow: 0 2px 4px rgba(0,0,0,0.3);
       font-size: 2.5rem;
       color: #f8f8f8;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 1.8rem;
+      color: #4cc9f0;
+      position: relative;
+      width: 100%;
+    }
+
+    .section-title:before,
+    .section-title:after {
+      content: "";
+      display: inline-block;
+      width: 30%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #4cc9f0, transparent);
+      position: absolute;
+      top: 50%;
+    }
+
+    .section-title:before {
+      left: 0;
+    }
+
+    .section-title:after {
+      right: 0;
+    }
+
+    .section-title span {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      padding: 0 15px;
+      position: relative;
+      z-index: 1;
     }
 
     .mods-container {
@@ -31,6 +66,7 @@
       flex-wrap: wrap;
       gap: 30px;
       max-width: 1200px;
+      margin-bottom: 30px;
     }
 
     .mod-card {
@@ -121,16 +157,22 @@
 </head>
 <body>
 <h1>
-  <a href="http://store.steampowered.com/app/323850/Move_or_Die/"
+  <a href="https://steamcommunity.com/id/MaestroTWw/"
      style="color: #4cc9f0; text-decoration: none; transition: all 0.3s ease;"
      onmouseover="this.style.textShadow='0 0 10px #4cc9f0'"
      onmouseout="this.style.textShadow='none'">
-    Move or Die
+    MTW
   </a>
   Mods Collection
 </h1>
 
+<!-- Move or Die Mods Section -->
+<div class="section-title">
+  <span>Move or Die Mods</span>
+</div>
+
 <div class="mods-container">
+  <!-- LuckyPatcher -->
   <div class="mod-card">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3508576521">
       <img src="LuckyPatcher/steamthumbnail.png" alt="LuckyPatcher Mod">
@@ -146,7 +188,8 @@
       </a>
     </div>
   </div>
-
+  
+  <!-- IndustrialBaby -->
   <div class="mod-card">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3510040093">
       <img src="IndustrialBaby/steamthumbnail.png" alt="IndustrialBaby Mod">
@@ -162,7 +205,8 @@
       </a>
     </div>
   </div>
-
+  
+  <!-- DK Emotes -->
   <div class="mod-card">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3510243223">
       <img src="DKEmotes/steamthumbnail.png" alt="DK Emotes Mod">
@@ -178,7 +222,8 @@
       </a>
     </div>
   </div>
-
+  
+  <!-- DetonationZoneTNT -->
   <div class="mod-card">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3515620793">
       <img src="DetonationZoneTNT/steamthumbnail.png" alt="DetonationZoneTNT Mod">
@@ -228,6 +273,31 @@
       </a>
     </div>
   </div>
+</div>
+
+<!-- The Binding of Isaac Mods Section -->
+<div class="section-title">
+  <span>The Binding of Isaac Mods</span>
+</div>
+
+<div class="mods-container">
+  <!--
+  <div class="mod-card">
+    <a href="#">
+      <img src="placeholder.png" alt="Isaac Mod">
+    </a>
+    <div class="mod-title">Isaac Mod Example</div>
+    <div class="mod-description">Description of Isaac mod</div>
+    <div class="icon-links">
+      <a href="#" class="icon-link github-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#" class="icon-link steam-icon">
+        <i class="fab fa-steam"></i>
+      </a>
+    </div>
+  </div>
+  -->
 </div>
 
 <footer>
