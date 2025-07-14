@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Item0Charge</name>
+    <directory>item0charge</directory>
+    <id>3525123747</id>
+    <description>All activated items have only 0 room recharge time</description>
+    <version>1.1</version>
+    <visibility>Public</visibility>
+    <tag id="Active Items"/>
+</metadata>
