@@ -1,2 +1,2 @@
 # My collection of game mods
-# [VIEW](https://maestrotw.github.io/MoveOrDie-Mods/)
+# [VIEW](https://maestrotw.github.io/MTW-Game-Mods/)
