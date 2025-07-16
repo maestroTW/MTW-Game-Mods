@@ -226,6 +226,33 @@
         margin-bottom: 30px;
       }
     }
+
+    /* golden cards */
+    .mod-card.featured {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mod-card.featured::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg, #ffd700, #daa520, #ffd700);
+      z-index: -1;
+      border-radius: 17px;
+      animation: goldenGlow 3s ease infinite;
+    }
+    
+    @keyframes goldenGlow {
+      0% { opacity: 0.8; }
+      50% { opacity: 1; }
+      100% { opacity: 0.8; }
+    }
+      }
+    }
   </style>
 </head>
 <body>
@@ -293,7 +320,7 @@
       </div>
       
       <!-- DK Emotes -->
-      <div class="mod-card">
+      <div class="mod-card featured">
         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3510243223">
           <img src="DKEmotes/steamthumbnail.png" alt="DK Emotes Mod">
         </a>
@@ -404,7 +431,7 @@
   </div>
       
       <!-- TF2 Frying Pan -->
-      <div class="mod-card">
+      <div class="mod-card featured">
         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3527092813">
           <img src="TF2 Frying Pan/logo.png" alt="TF2 Frying Pan Mod">
         </a>
