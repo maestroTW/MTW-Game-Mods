@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>TF2 Frying Pan</name>
+    <directory>tf2 frying pan</directory>
+    <id>3527092813</id>
+    <description>TF2 Frying Pan Mod
+- Mom's knife is Frying Pan
+- Achievement Mom's knife is Pan on EN,JP,KR languages
+- Frying pan sound when damage
+- TF2 sound when dying
+LOL</description>
+    <version>1.1</version>
+    <visibility>Public</visibility>
+    <tag id="Items"/>
+    <tag id="Sound Effects"/>
+</metadata>
